@@ -40,7 +40,7 @@
                             <form action="{{ url('importuser') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group  row"><label class="col-sm-2 col-form-label">File</label>
-                                     <input id="product_image" name="file" type="file" class="form-control" autocomplete="off"  required>
+                                     <input id="product_image" name="file" type="file" class="form-control" autocomplete="off" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  required>
                                 </div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group row">
