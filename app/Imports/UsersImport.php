@@ -41,7 +41,7 @@ class UsersImport implements ToModel
            }
         }
         else{
-            echo "no";die;
+            Session::flash('message', 'Some product not found.');
         }
         
     }
